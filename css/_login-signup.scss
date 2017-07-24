@@ -129,7 +129,7 @@
 
 .contain > #signin-content > img,
 #signup-content img {
-  margin: 8% auto 0;
+  margin: 5% auto 0;
   border-radius: 50%;
   width: 135px;
   height: 130px;
@@ -138,7 +138,7 @@
 .form-section {
   position: relative;
   padding: 0px 10%;
-  margin-top: 7%;
+  margin-top: 5%;
 }
 
 .form-section label {
@@ -182,6 +182,27 @@
   padding-left: 16px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+/* FOR SIGN UP */
+
+#cname {
+  background: url('company.svg') no-repeat scroll 12px 8px;
+  background-size: 16px 16px;
+  padding-left:35px;
+  z-index: 999;
+}
+
+#caddress {
+  background: url('address.svg') no-repeat scroll 12px 8px;
+  background-size: 16px 16px;
+  padding-left:35px;
+  z-index: 999;
+}
+
+#password,
+#confirmpwd {
+	@extend #pwd;
 }
 
 .btn-sign-in-center {

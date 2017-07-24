@@ -3,5 +3,5 @@
 @mixin center_div($top,$bottom) {
 	-webkit-transform: translate($top,$bottom);
 		-moz-transform: translate($top,$bottom);
-		-ms-transform: translate($top,$bottom);
+		 -ms-transform: translate($top,$bottom);
 }

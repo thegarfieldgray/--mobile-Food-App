@@ -55,26 +55,31 @@
 		<div class="form-section">
 		<form autocomplete="off">
 			<div class="row">
-				<div class="col-xs-6 col-sm-6">
-					<label for="fname"><sm>FIRSTNAME</sm></label>
-					<input type="name" class="form-control" id="firstname" placeholder="Enter your first name">
-				</div>
-				<div class="col-xs-6 col-sm-6">
-					<label for="lname"><sm>LASTNAME</sm></label>
-					<input type="name" class="form-control" id="lastname" placeholder="Enter your last name">
+				<div class="col-xs-12 col-sm-12">
+					<label for="cname"><sm>COMPANY</sm></label>
+					<input type="name" class="form-control" id="cname" placeholder="Enter company name">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12 col-sm-12">
+				<div class="col-xs-6 col-sm-6">
 					<label for="password"><sm>PASSWORD</sm></label>
 					<input type="password" class="form-control" id="password" placeholder="Enter your password">
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12 col-sm-12">
+				<div class="col-xs-6 col-sm-6">
 					<label for="confirmpwd"><sm>PASSWORD</sm></label>
 					<input type="password" class="form-control" id="confirmpwd" placeholder="Confirm your password">
 				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<label for="add"><sm>ADDRESS</sm></label>
+					<input type="address" class="form-control" id="caddress" placeholder="Enter company's address">
+				</div>
+			</div>
+			<div class="row">
+				<center>
+				  <button type="button" class="btn btn-sign-in-center">SIGN UP</button>
+				</center>
 			</div>
 		</div>
 		</form>
