@@ -49,8 +49,9 @@
 		<!-- End form section -->
 	</div><!-- End sign in -->
 
-	<div id="signup-content"><!-- Begin Sign Up -->
-	<img src="img/avatar.jpg" class="img-responsive logo-img" alt="image">
+	<!-- Begin Sign Up -->
+	<div id="signup-content">
+	<img src="img/avatar.jpg" class="img-responsive" alt="image">
 		<div class="form-section">
 		<form autocomplete="off">
 			<div class="row">

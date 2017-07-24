@@ -127,16 +127,12 @@
   color: $--main-font-color;
 }
 
-.contain > #signin-content > img {
+.contain > #signin-content > img,
+#signup-content img {
   margin: 8% auto 0;
   border-radius: 50%;
   width: 135px;
   height: 130px;
-}
-
-input:-webkit-autofill {
-    background: url('person.svg') no-repeat scroll 12px 8px;
-
 }
 
 .form-section {
@@ -164,7 +160,7 @@ input:-webkit-autofill {
 
 .form-section input:focus {
   border-color: rgba(180, 53, 30, 0.3);
-  box-shadow: 0 0px 0px rgba(87, 37, 100, 1) inset, 0 0 1px rgba(87, 37, 100, 1);
+  box-shadow: 0 0px 0px rgba(232, 76, 61, 1) inset, 0 0 1px rgba(232, 76, 61, 1);
   outline: 0 none;
 }
 
@@ -190,7 +186,7 @@ input:-webkit-autofill {
 
 .btn-sign-in-center {
   width: 45%;
-  background: #e84c3d;  
+  background: $--login-btn-main;  
   border: none;
   color: white;
   border-radius: 2px;
@@ -203,7 +199,7 @@ input:-webkit-autofill {
 }
 
 .btn-sign-in-center:hover {
-  background-color: #fd5c4c;
+  background-color: $--login-btn-main-hover;
   color:white;
   box-shadow: 0px 2px 3px #888888;
   transition-duration: 0.3s;
@@ -246,7 +242,7 @@ input:-webkit-autofill {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow: hidden;
-  opacity: 1;
+  opacity: 0.95;
 }
 .hvr-underline-from-center-2:before {
   content: "";

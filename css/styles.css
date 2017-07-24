@@ -1,5 +1,9 @@
 /* Declaration of variables  */
+/* Main */
+/* Login button styles */
 /* Declaration of variables  */
+/* Main */
+/* Login button styles */
 /* mixin */
 /* styles for login page */
 .contain {
@@ -88,14 +92,12 @@
   text-decoration: none;
   color: black; }
 
-.contain > #signin-content > img {
+.contain > #signin-content > img,
+#signup-content img {
   margin: 8% auto 0;
   border-radius: 50%;
   width: 135px;
   height: 130px; }
-
-input:-webkit-autofill {
-  background: url("person.svg") no-repeat scroll 12px 8px; }
 
 .form-section {
   position: relative;
@@ -118,17 +120,17 @@ input:-webkit-autofill {
 
 .form-section input:focus {
   border-color: rgba(180, 53, 30, 0.3);
-  box-shadow: 0 0px 0px #572564 inset, 0 0 1px #572564;
+  box-shadow: 0 0px 0px #e84c3d inset, 0 0 1px #e84c3d;
   outline: 0 none; }
 
 #username {
-  background: url("person.svg") no-repeat scroll 12px 8px;
+  background: url("--mobile-Food-App/img/login-screen/person.svg") no-repeat scroll 12px 8px;
   background-size: 15px 15px;
   padding-left: 35px;
   z-index: 999; }
 
 #pwd {
-  background: url("lock.svg") no-repeat scroll 12px 8px;
+  background: url("--mobile-Food-App/img/login-screen/lock.svg") no-repeat scroll 12px 8px;
   background-size: 16px 16px;
   padding-left: 35px;
   z-index: 999; }
@@ -190,7 +192,7 @@ input:-webkit-autofill {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow: hidden;
-  opacity: 1; }
+  opacity: 0.95; }
 
 .hvr-underline-from-center-2:before {
   content: "";
