@@ -8,11 +8,20 @@ function navX(x) {
 $(document).ready(function(){
     $("#signup").click(function(){
     	document.getElementById("signin-content").style.display="none";
+        document.getElementById("signup").style.color="#fd5c4c";
+        document.getElementById("signin").style.color="black";
     		$("#signup-content").fadeIn('slow');
+    		$(".contain").animate({height:'620'});
+
     });
+
 
     $("#signin").click(function(){
     	document.getElementById("signup-content").style.display="none";
-    		$("#signin-content").fadeIn('slow');	
+        document.getElementById("signin").style.color="#fd5c4c";
+        document.getElementById("signup").style.color="black";
+    		$("#signin-content").fadeIn('slow');
+    		$(".contain").animate({height:'550'});	
     });
 });
+

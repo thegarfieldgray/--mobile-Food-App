@@ -1,7 +1,3 @@
-/* ================== */
-/* Declaration of variables  */
-/* Main */
-/* Login button styles */
 /* Declaration of variables  */
 /* Main */
 /* Login button styles */
@@ -59,23 +55,17 @@
 @media screen and (max-width: 620px) {
   .contain {
     width: 80%;
-    transition-duration: 0.3s; } }
+    transition-duration: 0.3s;
+    height: 510px; } }
 @media screen and (max-width: 520px) {
   .contain {
     width: 85%;
-    transition-duration: 0.3s; }
-
-  .navigation > ul > li > a {
-    margin-left: -5px;
-    transition: 0.5s; } }
+    transition-duration: 0.3s;
+    height: 500px; } }
 @media screen and (max-width: 480px) {
   .contain {
     width: 90%;
-    transition-duration: 0.3s; }
-
-  .navigation > ul > li > a {
-    margin-left: -10px;
-    transition: 0.5s; } }
+    transition-duration: 0.3s; } }
 .navigation {
   top: 0;
   left: 0;
@@ -164,8 +154,8 @@
   padding-left: 35px;
   z-index: 999; }
 
-#mailing, #fgtpwd {
-  background: url("mail.svg") no-repeat scroll 12px 8px;
+#mailing {
+  background: url("placeholder.svg") no-repeat scroll 12px 8px;
   background-size: 16px 16px;
   padding-left: 35px;
   z-index: 999; }
@@ -197,8 +187,7 @@
   outline: none; }
 
 .btn-sign-up-center {
-  margin-top: 20px;
-  margin-bottom: 62px; }
+  margin-top: 20px; }
 
 #forgot {
   position: absolute;
@@ -254,29 +243,9 @@
 #signup-content {
   display: none; }
 
-#signin {
-  color: #e84c3d; }
+#header {
+  font-family: 'Allura', cursive;
+  font-size: 92px;
+  text-align: center; }
 
-#forgot-password-modal-content {
-  background: white;
-  border-radius: 2px; }
-
-#forgot-password-modal-position {
-  top: 44%; }
-
-#forgot-password-modal-body {
-  padding: 30px; }
-
-.modal-backdrop.in {
-  filter: alpha(opacity=50);
-  opacity: .3; }
-
-/* mixin */
-/* ================== */
-html, body {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  height: 100%;
-  background-color: #f4f4f4; }
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=_login-signup.css.map */

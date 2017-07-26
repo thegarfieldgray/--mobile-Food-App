@@ -80,7 +80,6 @@
     .contain {
       width: 80%;
       transition-duration: 0.3s;
-      height: 510px;
     }
 }
 
@@ -88,7 +87,11 @@
     .contain {
       width: 85%;
       transition-duration: 0.3s;
-      height: 500px;
+    }
+
+    .navigation > ul > li > a {
+		margin-left: -5px;
+		transition: 0.5s;
     }
 }
 
@@ -96,6 +99,11 @@
     .contain {
       width: 90%;
       transition-duration: 0.3s;
+    }
+
+    .navigation > ul > li > a {
+		margin-left: -10px;
+		transition: 0.5s;
     }
 }
 
@@ -145,6 +153,11 @@
   padding-bottom: 5px;
 }
 
+//for sign up
+#signup-content .form-section input {
+  margin-bottom: 10px;
+}
+
 .form-section sm {
   padding-left: 14px;
   opacity: 0.71;
@@ -187,17 +200,28 @@
 /* FOR SIGN UP */
 
 #cname {
-  background: url('company.svg') no-repeat scroll 12px 8px;
+  background: url('cutlery.svg') no-repeat scroll 12px 8px;
   background-size: 16px 16px;
   padding-left:35px;
   z-index: 999;
 }
 
 #caddress {
-  background: url('address.svg') no-repeat scroll 12px 8px;
+  background: url('placeholder.svg') no-repeat scroll 12px 8px;
   background-size: 16px 16px;
   padding-left:35px;
   z-index: 999;
+}
+
+#mailing {
+  background: url('mail.svg') no-repeat scroll 12px 8px;
+  background-size: 16px 16px;
+  padding-left:35px;
+  z-index: 999;
+}
+
+#fgtpwd {
+	@extend #mailing;
 }
 
 #password,
@@ -206,7 +230,7 @@
 }
 
 .btn-sign-in-center {
-  width: 45%;
+  width: 43%;
   background: $--login-btn-main;  
   border: none;
   color: white;
@@ -231,6 +255,14 @@
   color:white;
   transition-duration: 0.3s;
   outline: none;
+}
+
+//Sign up btn
+
+.btn-sign-up-center {
+	margin-top: 20px;
+	margin-bottom: 62px;
+	@extend .btn-sign-in-center;
 }
 
 #forgot {
@@ -292,8 +324,24 @@
   display: none;
 }
 
-#header {
-  font-family: 'Allura', cursive;
-  font-size: 92px;
-  text-align: center;
+#signin {
+	color: $--login-btn-main;
+}
+
+#forgot-password-modal-content {
+	background: white;
+	border-radius: 2px;
+}
+
+#forgot-password-modal-position{
+	top:44%;
+}
+
+#forgot-password-modal-body {
+	padding: 30px;
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .3;
 }
