@@ -27,6 +27,7 @@
 			  </div>
 			  <div class="form-group">
 			    <label for="pwd"><sm>PASSWORD</sm></label>
+				<p id="user-heading"><sm></sm></p>
 			    <input type="password" class="form-control" id="pwd" placeholder="Enter your password">
 			  </div>
 			  <div class="row" id="mid">
@@ -38,7 +39,7 @@
 				<div class="col-xs-6 col-sm-6">
 					<a href="#" id="forgot" class="hvr-underline-from-center-2" data-toggle="modal" data-target="#forgotPassword">forgot password?</a>
 				</div>
-			  </div>	  
+			  </div>
 			  <div class="row">
 				<center>
 				  <button type="button" class="btn btn-sign-in-center">SIGN IN</button>
@@ -96,9 +97,17 @@
 	</div><!-- End sign up -->
 
 	</div>
+
+	<?php include "core/firebase-includes.php"; ?>
+	<script type="text/javascript" src="js/firebase/sign-in.js">
+
+	</script>
+
+	</script>
 </div>
 </div>
 
+<<<<<<< Updated upstream
 <!-- Forgot password modal-->
   <!-- Modal -->
  <div class="modal fade" id="forgotPassword" role="dialog">
@@ -120,3 +129,6 @@
 </div>
 
 <?php include "footer.php" ?>
+=======
+<?php include "footer.php" ?>
+>>>>>>> Stashed changes
