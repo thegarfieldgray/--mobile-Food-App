@@ -61,7 +61,7 @@
 					<input type="email" class="form-control" id="mailing" placeholder="Enter your email">
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<label for="password"><sm>PASSWORD</sm></label>
@@ -86,7 +86,7 @@
 					<input type="address" class="form-control" id="caddress" placeholder="Enter company's address">
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<center>
 				  <button type="button" class="btn btn-sign-up-center">SIGN UP</button>
