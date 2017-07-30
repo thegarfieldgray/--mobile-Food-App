@@ -15,7 +15,7 @@
 
 		<div id="signin-content">
 		<!-- Avatar image -->
-			<img src="img/avatar.jpg" class="img-responsive logo-img" alt="image">
+			<img src="img/avatar-1.png" class="img-responsive logo-img" alt="image">
 		<!-- END Avatar -->
 
 		<!-- Form Section -->
@@ -52,7 +52,7 @@
 
 	<!-- Begin Sign Up -->
 	<div id="signup-content">
-	<img src="img/avatar.jpg" class="img-responsive" alt="image">
+	<img src="img/avatar-1.png" class="img-responsive" alt="image">
 		<div class="form-section">
 		<form autocomplete="off">
 			<div class="row">
@@ -89,7 +89,7 @@
 
 			<div class="row">
 				<center>
-				  <button type="button" class="btn btn-sign-up-center">SIGN UP</button>
+				  <button type="button" class="btn btn-sign-up-center" onclick="signUpNewMerchant();">SIGN UP</button>
 				</center>
 			</div>
 		</div>
@@ -98,16 +98,13 @@
 
 	</div>
 
+	<!-- ====================================================== -->
+	<!--  firebase include files -->
 	<?php include "core/firebase-includes.php"; ?>
-	<script type="text/javascript" src="js/firebase/sign-in.js">
+	<script type="text/javascript" src="js/firebase/sign-up.js">	</script>
+	<!-- ====================================================== -->
 
-	</script>
-
-	</script>
 </div>
-</div>
-
-<<<<<<< Updated upstream
 <!-- Forgot password modal-->
   <!-- Modal -->
  <div class="modal fade" id="forgotPassword" role="dialog">
@@ -129,6 +126,3 @@
 </div>
 
 <?php include "footer.php" ?>
-=======
-<?php include "footer.php" ?>
->>>>>>> Stashed changes
