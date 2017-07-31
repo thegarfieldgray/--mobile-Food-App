@@ -1,10 +1,10 @@
 
-function configGeolocationAndGetGeolocatedAddress() {
+function configGeolocationAndGetGeolocatedAddress(address) {
 
     var geocoder = new google.maps.Geocoder();
-    geocoder = new google.maps.Geocoder();
+    //geocoder = new google.maps.Geocoder();
 
-    var address = "20 NY-27A, Southampton, NY 11968";
+    //var address = "20 NY-27A, Southampton, NY 11968";
 
     geocoder.geocode({ 'address': address }, function(results, status) {
 

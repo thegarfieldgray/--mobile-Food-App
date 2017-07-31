@@ -12,15 +12,9 @@ window.onload = function() {
 
 };
 
-
-
-
-
 function initApp() {
 
     //  signOutMerchant();
-
-
     firebase.auth().onAuthStateChanged(function(user) {
 
         console.log(user);
@@ -44,6 +38,7 @@ function initApp() {
 
                 updateMerchantInformation(userId, email, password, companyName, address);
 
+
             } else {
 
                 // user was previously logged in
@@ -64,7 +59,7 @@ function initApp() {
 // --------------------------------------------------
 
 function signOutMerchant(){
-    
+
     // sign out function
     firebase.auth().signOut().then(function() {
 
@@ -154,11 +149,17 @@ function updateMerchantInformation(uid, email, name, address, imgUrl = null) {
 
     return firebase.database().ref().update(updates, function(error){
 
+        registerAttempt = false;
+
         if (error) {
+
             console.log(error);
             return;
+
         } else {
+
             console.log("successfully Added To Firebase Realtime Databse");
+            document.location.href = "http://localhost/~davanedavis/mobile-Food-App/testing.php";
 
         }
     });
