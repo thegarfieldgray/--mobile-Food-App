@@ -199,21 +199,21 @@
 
 /* FOR SIGN UP */
 
-#cname {
+#companyNameInputLabelId {
   background: url('cutlery.svg') no-repeat scroll 12px 8px;
   background-size: 16px 16px;
   padding-left:35px;
   z-index: 999;
 }
 
-#caddress {
+#companyAddressInputLabelId {
   background: url('placeholder.svg') no-repeat scroll 12px 8px;
   background-size: 16px 16px;
   padding-left:35px;
   z-index: 999;
 }
 
-#mailing {
+#emailInputLabelId {
   background: url('mail.svg') no-repeat scroll 12px 8px;
   background-size: 16px 16px;
   padding-left:35px;
@@ -221,17 +221,17 @@
 }
 
 #fgtpwd {
-	@extend #mailing;
+	@extend #emailInputLabelId;
 }
 
-#password,
-#confirmpwd {
+#passwordInputLabelId,
+#rePasswordInputLabelId {
 	@extend #pwd;
 }
 
 .btn-sign-in-center {
   width: 43%;
-  background: $--login-btn-main;  
+  background: $--login-btn-main;
   border: none;
   color: white;
   border-radius: 2px;

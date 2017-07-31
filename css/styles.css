@@ -140,7 +140,7 @@
   z-index: 999; }
 
 #pwd, #password,
-#confirmpwd {
+#rePasswordInputLabelId {
   background: url("lock.svg") no-repeat scroll 12px 8px;
   background-size: 16px 16px;
   padding-left: 35px;
@@ -152,19 +152,19 @@
   margin-bottom: 0px; }
 
 /* FOR SIGN UP */
-#cname {
+#companyNameInputLabelId {
   background: url("cutlery.svg") no-repeat scroll 12px 8px;
   background-size: 16px 16px;
   padding-left: 35px;
   z-index: 999; }
 
-#caddress {
+#companyAddressInputLabelId {
   background: url("placeholder.svg") no-repeat scroll 12px 8px;
   background-size: 16px 16px;
   padding-left: 35px;
   z-index: 999; }
 
-#mailing, #fgtpwd {
+#emailInputLabelId, #fgtpwd {
   background: url("mail.svg") no-repeat scroll 12px 8px;
   background-size: 16px 16px;
   padding-left: 35px;
