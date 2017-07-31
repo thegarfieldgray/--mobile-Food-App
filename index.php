@@ -25,11 +25,9 @@
 			    <label for="email"><sm>USERNAME</sm></label>
 			    <input type="text" class="form-control" id="username" placeholder="Enter your username">
 			  </div>
-			  <div class="form-group">
 			    <label for="pwd"><sm>PASSWORD</sm></label>
 				<p id="user-heading"><sm></sm></p>
 			    <input type="password" class="form-control" id="pwd" placeholder="Enter your password">
-			  </div>
 			  <div class="row" id="mid">
 			  	<div class="col-xs-6 col-sm-6">
 				  <div class="checkbox" id="check">
@@ -65,7 +63,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<label for="password"><sm>PASSWORD</sm></label>
-					<input type="password" class="form-control" id="password" placeholder="Enter your password">
+					<input type="password" class="form-control" id="password" placeholder="Enter your password" >
 				</div>
 				<div class="col-xs-12 col-sm-6">
 					<label for="confirmpwd"><sm>PASSWORD</sm></label>
