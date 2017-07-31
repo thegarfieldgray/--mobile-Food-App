@@ -58,32 +58,32 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12">
 					<label for="mail"><sm>EMAIL</sm></label>
-					<input type="email" class="form-control" id="mailing" placeholder="Enter your email">
+					<input type="email" class="form-control" id="emailInputLabelId" placeholder="Enter your email" required>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-xs-12 col-sm-6">
 					<label for="password"><sm>PASSWORD</sm></label>
-					<input type="password" class="form-control" id="password" placeholder="Enter your password">
+					<input type="password" class="form-control" id="passwordInputLabelId" placeholder="Enter your password" required>
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<label for="confirmpwd"><sm>PASSWORD</sm></label>
-					<input type="password" class="form-control" id="confirmpwd" placeholder="Confirm your password">
+					<label for="rePasswordInputLabelId"><sm>PASSWORD</sm></label>
+					<input type="password" class="form-control" id="rePasswordInputLabelId" placeholder="Confirm your password" required>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-xs-12 col-sm-12">
-					<label for="cname"><sm>COMPANY</sm></label>
-					<input type="name" class="form-control" id="cname" placeholder="Enter company name">
+					<label for="companyNameInputLabelId"><sm>COMPANY</sm></label>
+					<input type="name" class="form-control" id="companyNameInputLabelId" placeholder="Enter company name" required>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-xs-12 col-sm-12">
 					<label for="add"><sm>ADDRESS</sm></label>
-					<input type="address" class="form-control" id="caddress" placeholder="Enter company's address">
+					<input type="address" class="form-control" id="companyAddressInputLabelId" placeholder="Enter company's address" required>
 				</div>
 			</div>
 
