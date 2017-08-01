@@ -25,3 +25,10 @@ $(document).ready(function(){
     });
 });
 
+var xhr = new XMLHttpRequest();
+
+xhr.open("GET","restaurantList.txt", false);
+
+xhr.send(null);
+
+alert(xhr.responseText);

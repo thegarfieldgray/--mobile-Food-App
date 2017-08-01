@@ -15,7 +15,7 @@
 
 		<div id="signin-content">
 		<!-- Avatar image -->
-			<img src="img/avatar-1.png" class="img-responsive logo-img" alt="image">
+			<img src="img/salad.svg" class="img-responsive logo-img" alt="image">
 		<!-- END Avatar -->
 
 		<!-- Form Section -->
