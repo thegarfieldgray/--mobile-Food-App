@@ -36,8 +36,8 @@ function initApp() {
                 var companyName = document.getElementById("companyNameInputLabelId").value;
                 var address     = document.getElementById("companyAddressInputLabelId").value;
 
-                updateMerchantInformation(userId, email, password, companyName, address);
-
+                console.log(userId + " " + email + " " + password + " " + companyName + " " + address);
+                //updateMerchantInformation(userId, email, companyName, address, null)
 
             } else {
 
@@ -141,7 +141,7 @@ function updateMerchantInformation(uid, email, name, address, imgUrl = null) {
         'email': email,
         'fullname': name,
         'location': address,
-        'imgUrl': imgUrl,
+        'imgUrl': imgUrl
     };
 
     var updates = {};
