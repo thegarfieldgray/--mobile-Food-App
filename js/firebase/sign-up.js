@@ -12,15 +12,9 @@ window.onload = function() {
 
 };
 
-
-
-
-
 function initApp() {
 
     //  signOutMerchant();
-
-
     firebase.auth().onAuthStateChanged(function(user) {
 
         console.log(user);
@@ -42,7 +36,8 @@ function initApp() {
                 var companyName = document.getElementById("companyNameInputLabelId").value;
                 var address     = document.getElementById("companyAddressInputLabelId").value;
 
-                updateMerchantInformation(userId, email, password, companyName, address);
+                console.log(userId + " " + email + " " + password + " " + companyName + " " + address);
+                //updateMerchantInformation(userId, email, companyName, address, null)
 
             } else {
 
@@ -64,7 +59,7 @@ function initApp() {
 // --------------------------------------------------
 
 function signOutMerchant(){
-    
+
     // sign out function
     firebase.auth().signOut().then(function() {
 
@@ -146,7 +141,7 @@ function updateMerchantInformation(uid, email, name, address, imgUrl = null) {
         'email': email,
         'fullname': name,
         'location': address,
-        'imgUrl': imgUrl,
+        'imgUrl': imgUrl
     };
 
     var updates = {};
@@ -154,11 +149,17 @@ function updateMerchantInformation(uid, email, name, address, imgUrl = null) {
 
     return firebase.database().ref().update(updates, function(error){
 
+        registerAttempt = false;
+
         if (error) {
+
             console.log(error);
             return;
+
         } else {
+
             console.log("successfully Added To Firebase Realtime Databse");
+            document.location.href = "http://localhost/~davanedavis/mobile-Food-App/testing.php";
 
         }
     });
