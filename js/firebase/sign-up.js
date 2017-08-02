@@ -36,13 +36,14 @@ function initApp() {
                 var companyName = document.getElementById("companyNameInputLabelId").value;
                 var address     = document.getElementById("companyAddressInputLabelId").value;
 
-                console.log(userId + " " + email + " " + password + " " + companyName + " " + address);
-                //updateMerchantInformation(userId, email, companyName, address, null)
+                //console.log(userId + " " + email + " " + password + " " + companyName + " " + address);
+                updateMerchantInformation(userId, email, companyName, address)
 
             } else {
 
                 // user was previously logged in
 
+                //document.location.href = "http://localhost/~davanedavis/mobile-Food-App/testing.php";
 
             }
 
@@ -134,14 +135,13 @@ function singUpNewMerchantsWithParamters(email, password) {
 }
 
 // adding new authenticated Merchant to Merchant node
-function updateMerchantInformation(uid, email, name, address, imgUrl = null) {
+function updateMerchantInformation(uid, email, name, address) {
 
     // A merchant entry.
     var merchantData = {
         'email': email,
         'fullname': name,
-        'location': address,
-        'imgUrl': imgUrl
+        'location': address
     };
 
     var updates = {};
@@ -163,4 +163,6 @@ function updateMerchantInformation(uid, email, name, address, imgUrl = null) {
 
         }
     });
+
+
 }

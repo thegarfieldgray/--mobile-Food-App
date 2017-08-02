@@ -6,7 +6,7 @@
 .contain {
 	position: absolute;
 	width: 35%;
-	height: 550px;
+	height: 530px;
 	top: 50%;
 	left: 50%;
 	background-color: white;
@@ -137,16 +137,16 @@
 
 .contain > #signin-content > img,
 #signup-content img {
-  margin: 5% auto 0;
+  margin: 4% auto 5%;
   border-radius: 50%;
-  width: 135px;
-  height: 130px;
+  width: 130px;
+  height: 125px;
 }
 
 .form-section {
   position: relative;
   padding: 0px 10%;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
 .form-section label {
@@ -160,9 +160,10 @@
 
 .form-section sm {
   padding-left: 14px;
-  opacity: 0.71;
-    font-size: 11px;
-    font-weight: 300;
+  opacity: 0.93;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 .form-section input {
@@ -276,6 +277,8 @@
 #forgot:hover,
 #forgot:focus {
   text-decoration: none;
+  color: $--login-btn-main;
+  transition: 0.5;
 }
 
 #mid {
@@ -304,7 +307,7 @@
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: rgba(0, 0, 0, .8);
+  background: $--login-btn-main;
   height: 1px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
