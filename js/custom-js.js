@@ -3,6 +3,7 @@ Waves.attach('.btn-sign-up-center', ['waves-float'],['waves-button']);
 Waves.init();
 
 var map;
+//use geocoder
 function initialize() {
   var myLatlng = new google.maps.LatLng(18.521053,-77.860226);
   console.log(myLatlng);
