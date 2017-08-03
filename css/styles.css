@@ -171,7 +171,7 @@
   padding-left: 35px;
   z-index: 999; }
 
-.btn-sign-in-center, .btn-sign-up-center {
+.btn-sign-in-center, .btn-sign-up-center, .submit-map {
   width: 43%;
   background: #e84c3d;
   border: none;
@@ -184,15 +184,16 @@
   border: none;
   text-align: center; }
 
-.btn-sign-in-center:hover, .btn-sign-up-center:hover {
+.btn-sign-in-center:hover, .btn-sign-up-center:hover, .submit-map:hover {
   background-color: #fd5c4c;
   color: white;
   box-shadow: 0px 2px 3px #888888;
   transition-duration: 0.3s; }
 
-.btn-sign-in-center:focus, .btn-sign-up-center:focus,
+.btn-sign-in-center:focus, .btn-sign-up-center:focus, .submit-map:focus,
 .btn-sign-in-center:active,
-.btn-sign-up-center:active {
+.btn-sign-up-center:active,
+.submit-map:active {
   color: white;
   transition-duration: 0.3s;
   outline: none; }
@@ -448,7 +449,7 @@
   padding-left: 35px;
   z-index: 999; }
 
-.btn-sign-in-center, .btn-sign-up-center {
+.btn-sign-in-center, .btn-sign-up-center, .submit-map {
   width: 43%;
   background: #e84c3d;
   border: none;
@@ -461,15 +462,16 @@
   border: none;
   text-align: center; }
 
-.btn-sign-in-center:hover, .btn-sign-up-center:hover {
+.btn-sign-in-center:hover, .btn-sign-up-center:hover, .submit-map:hover {
   background-color: #fd5c4c;
   color: white;
   box-shadow: 0px 2px 3px #888888;
   transition-duration: 0.3s; }
 
-.btn-sign-in-center:focus, .btn-sign-up-center:focus,
+.btn-sign-in-center:focus, .btn-sign-up-center:focus, .submit-map:focus,
 .btn-sign-in-center:active,
-.btn-sign-up-center:active {
+.btn-sign-up-center:active,
+.submit-map:active {
   color: white;
   transition-duration: 0.3s;
   outline: none; }
@@ -571,6 +573,10 @@
   font-weight: 300;
   letter-spacing: 0.5px;
   margin-bottom: 10px; }
+
+.submit-map {
+  margin-top: 5%;
+  background-color: green; }
 
 /* ================== */
 html, body {
