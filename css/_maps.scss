@@ -27,5 +27,10 @@
     margin-bottom: 10px;
 }
 
+.submit-map {
+	@extend .btn-sign-in-center;
+	margin-top: 5%;
+}
+
 
 

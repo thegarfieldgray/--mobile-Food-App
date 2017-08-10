@@ -14,7 +14,13 @@
 					<div class="col-xs-12 col-sm-12">
 						<label for="companyAddressInputLabelId" id="companyAddress"><sm>ADDRESS</sm></label>
 							<input type="address" value="" class="form-control" id="companyAddressInputLabelId" placeholder="Enter company's address" required>
-						</div>
+					</div>
+					<p id="geoError"></p>
+				</div>
+				<div class="row">
+					<center>
+						<button type="button" class="btn submit-map" id="submit-map" onclick="">Submit</button>
+					</center>
 				</div>
 			</div>
 		</form>
