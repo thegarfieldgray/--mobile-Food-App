@@ -1,78 +1,39 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-       #map {
-        height: 400px;
-        width: 100%;
-       }
-    </style>
-  </head>
-  <body>
-    <h3>Verify Company's Address</h3>
-    <p> Some nice text explaining what to do here </p>
-    <input type="text" class="form-control" id="companyAddressVerificationId" placeholder="Varify your Address">
-    <div id="map"></div>
+<?php include 'header.php'; ?>
 
-    <?php include "core/firebase-includes.php"; ?>
-    <script type="text/javascript" src="js/location-service/google-geo-location.js">
+<div class="contain">
+	<div id="map"></div>
+	<div id="location">
+		<h3>Almost done!</h3>
+		<p>Use the map to select your restaurant's location<br>or use the input fields below:</p>
+	</div>
+	<hr style="width: 80%; margin-top: -2px;">
+	<div class="location-form">
+		<form>
+			<div class="form-group">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12">
+						<label for="companyAddressInputLabelId" id="companyAddress"><sm>ADDRESS</sm></label>
+							<input type="address" value="" class="form-control" id="companyAddressInputLabelId" placeholder="Enter company's address" required disabled> <br>
+							<button type="button" class="btn btn-sign-in-center">That's My Address <i class="fa-li fa fa-spinner fa-spin"></i></button>
+							<button type="button" class="btn btn-sign-in-center" onclick="recenterMapToOriginalAddress();">Original Address <i class="fa-li fa fa-spinner fa-spin"></i></button>
 
-    </script>
-    <script>
+							<br><br>
+							<small style="color: gray;">The address that shows up, might not be the correct of your business. However, try to click the exact location where you think your restaurant might be located</small>
 
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
 
-     function getAddess(user) {
+<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApjP_pSamKpO3Sdj0C8GDSkePyFIqTY4Q&callback=initialize"></script> -->
+<?php include "core/firebase-includes.php"; ?>
+<script type="text/javascript" src="js/location-service/google-geo-location.js"> </script>
+<script type="text/javascript" src="js/map/sign-up-address-verification.js"></script>
 
-        var userId = user.uid;
-        firebase.database().ref('/merchant/' + userId).once('value').then(function(snapshot) {
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApjP_pSamKpO3Sdj0C8GDSkePyFIqTY4Q&callback=initMap">
+</script>
 
-            //console.log(snapshot.val().location);
-
-            document.getElementById("companyAddressVerificationId").value = snapshot.val().fullname + ", " + snapshot.val().location;
-
-            configGeolocationAndGetGeolocatedAddress(snapshot.val().location, function(coordinates) {
-
-                console.log(coordinates);
-
-                var uluru = {lat: coordinates.lat(), lng: coordinates.lng()};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                  zoom: 14,
-                  center: uluru
-                });
-                var marker = new google.maps.Marker({
-                  position: uluru,
-                  map: map
-                });
-
-            });
-        });
-     }
-
-
-      function initMap() {
-
-
-          firebase.auth().onAuthStateChanged(function(user) {
-
-              if (user) {
-                  getAddess(user);
-              }
-
-          });
-
-        // var uluru = {lat: -25.363, lng: 131.044};
-        // var map = new google.maps.Map(document.getElementById('map'), {
-        //   zoom: 5,
-        //   center: uluru
-        // });
-        // var marker = new google.maps.Marker({
-        //   position: uluru,
-        //   map: map
-        // });
-      }
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApjP_pSamKpO3Sdj0C8GDSkePyFIqTY4Q&callback=initMap">
-    </script>
-  </body>
-</html>
+<?php include 'footer.php'; ?>
