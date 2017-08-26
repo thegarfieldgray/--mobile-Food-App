@@ -583,6 +583,8 @@ html, body {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   height: 100%;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;}
 
 /*# sourceMappingURL=styles.css.map */
