@@ -4,15 +4,17 @@ var mainMarker;
 var originalCoordinates;
 
 // GUI Components
-var addressInputField = addressInputField = document.getElementById("companyAddressInputLabelId");
+var addressInputField = document.getElementById("companyAddressInputLabelId");
 
- function initMap() {
+//------------------------------------------------------------------------------
+
+function initMap() {
      firebase.auth().onAuthStateChanged(function(user) {
          if (user) {
              getAddessFromFirebase(user);
          }
      });
- }
+}
 
 function getAddessFromFirebase(user) {
 
@@ -48,7 +50,6 @@ function getAddessFromFirebase(user) {
 
 function addEventListenerToMap(map) {
     google.maps.event.addListener(map, "click", function (event) {
-
         var latitude = event.latLng.lat();
         var longitude = event.latLng.lng();
         console.log( latitude + ', ' + longitude );
